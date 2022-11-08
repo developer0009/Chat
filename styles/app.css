@@ -1,0 +1,33 @@
+body {
+  /* background-color: salmon; */
+}
+
+.par {
+  overflow: scroll;
+  width: 70vw;
+  height: 70vh;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  margin-top: 50px;
+  /* background: linear-gradient(cyan, green); */
+  background-image: url("https://www.kibrispdr.org/data/10/background-free-8.jpg");
+  background-size: cover;
+  box-sizing: border-box;
+}
+.input {
+  width: 15%;
+}
+.block {
+  width: 40vw;
+  box-sizing: border-box;
+}
+.block {
+  margin: 0 auto;
+  /* border: 2px solid red; */
+  margin-top: auto;
+  /* position: ; */
+}
+.messages-block {
+  height: fit-content;
+}
