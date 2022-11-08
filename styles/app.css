@@ -31,3 +31,11 @@ body {
 .messages-block {
   height: fit-content;
 }
+@media only screen and (max-width: 768px) {
+  .par {
+    width: 100vw;
+  }
+  .block {
+    width: 90vw;
+  }
+}
