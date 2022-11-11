@@ -32,10 +32,23 @@ body {
   height: fit-content;
 }
 @media only screen and (max-width: 768px) {
+  h1 {
+    margin-bottom: 30px;
+  }
   .par {
     width: 100vw;
   }
   .block {
     width: 90vw;
   }
+}
+.tot-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+}
+.connected-user {
+  justify-self: left;
+  margin: 0 auto;
+  text-align: center;
 }

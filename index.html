@@ -13,7 +13,8 @@
 </head>
   </head>
   <body>
-<h1 class="text-center mt-3">Chat With any random person !!!</h1>
+<h1 class="text-center mt-3" >Chat With any random person !!!</h1>
+<div class="tot-container">
 <div class="par">
 <div class="messages-block"></div>
 <div class="input-group mx-auto block">
@@ -22,33 +23,13 @@
   <span class="input-group-text btn btn-success" id="basic-addon2" type="button"><i class="fa-solid fa-paper-plane"></i></span> 
 
 </div>
+
 </div>
-    <script type="module">
-      import { io } from "https://cdn.socket.io/4.4.1/socket.io.esm.min.js";
-      const socket = io();
-const addUp = (name,value)=>{
-const div = document.createElement("div")
-div.innerHTML= name+ "  <i class=\"fa-solid fa-user\"></i>" +" : "+ value;  
-messages.append(div);
-            
- div.style.marginBottom="10px";
-window.scrollTo(0,div.scrollHeight)
-}
-     let name = prompt("enter your name !!")
-const messages = document.getElementsByClassName("messages-block")[0];   
-  while(!name) name = prompt("enter your name")
-     const input = document.getElementById("msg")
-    document.getElementById("basic-addon2").addEventListener("click",(evt)=>{
-          if(input.value){
-            socket.emit('chat-message', name,input.value);
-            addUp("You ",input.value)
-           input.value=""
-          }
-});
-   
-    socket.on("append-messages",(name,value)=>{
-        addUp(name,value)
-})
-    </script>
+<div class="connected-user">
+<h3>Connected users</h3>
+</div>
+</div>
+    <script type="module" src="/styles/app.js">
+</script>
   </body>
 </html>
